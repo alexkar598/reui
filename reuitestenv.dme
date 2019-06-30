@@ -7,10 +7,10 @@
 
 // BEGIN_FILE_DIR
 #define FILE_DIR .
-#define FILE_DIR "icons"
 // END_FILE_DIR
 
 // BEGIN_PREFERENCES
+#define DEBUG
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
@@ -22,5 +22,7 @@
 #include "game\objects\computer.dm"
 #include "game\turfs\turfs.dm"
 #include "maps\map.dmm"
+#include "ReUI\interfaces\UIDatumInterface.dm"
+#include "ReUI\internal\UIDatum.dm"
 // END_INCLUDE
 

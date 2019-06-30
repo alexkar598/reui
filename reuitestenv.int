@@ -2,8 +2,8 @@
 /*
 MAP_ZOOM: 1.000
 LAST_COMPILE_TIME: 1561849950
-DIR: game game\mob game\objects game\turfs icons maps 
-AUTO_FILE_DIR: ON
+DIR: game game\mob game\objects game\turfs icons maps ReUI 
+AUTO_FILE_DIR: OFF
 MAP_ICON_TYPE: 0
 LAST_COMPILE_VERSION: 512.1463
 WINDOW: maps\map.dmm;skin.dmf;icons\iconfile.dmi

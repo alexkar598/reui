@@ -29,13 +29,13 @@ module.exports = {
 	mode: 'development',
 
 	entry: {
-		test: './src/windows/test.js',
-		otherpage: './src/windows/otherpage.js',
-		thirdpage: './src/windows/thirdpage.js'
+		window_test: './src/windows/test.js',
+		window_otherpage: './src/windows/otherpage.js',
+		window_thirdpage: './src/windows/thirdpage.js'
 	},
 
 	output: {
-		filename: '[name].[chunkhash].js',
+		filename: 'reui_[name].js',
 		path: path.resolve(__dirname, 'build')
 	},
 
@@ -66,17 +66,21 @@ module.exports = {
 
 	optimization: {
 		splitChunks: {
-			cacheGroups: {
-				vendors: {
-					priority: -10,
-					test: /[\\/]node_modules[\\/]/
-				}
-			},
-
-			chunks: 'async',
+			chunks: 'all',
+			maxSize: 0,
 			minChunks: 1,
-			minSize: 30000,
-			name: true
+			name: "vendors",
+			cacheGroups: {
+			  vendors: {
+				test: /[\\/]node_modules[\\/]/,
+				priority: -10
+			  },
+			  default: {
+				minChunks: 2,
+				priority: -20,
+				reuseExistingChunk: true
+			  }
+			}
 		}
 	},
 

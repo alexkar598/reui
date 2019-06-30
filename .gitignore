@@ -1,2 +1,3 @@
 *.lk
 **/node_modules/**
+ReUI/webData/build/**
