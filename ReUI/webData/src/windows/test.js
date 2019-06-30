@@ -1,1 +1,1 @@
-console.log("Hello World from test main file!");
+import 'react-app-polyfill/ie9';
