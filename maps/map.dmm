@@ -1,6 +1,7 @@
 "a" = (/turf,/area)
 "b" = (/mob/npc,/turf,/area)
 "c" = (/turf/wall,/area)
+"d" = (/obj/computer,/turf,/area)
 
 (1,1,1) = {"
 ccccccccccccccccccccccccccccccccccc
@@ -30,7 +31,7 @@ caaabaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
 caaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
 caaaaaaaaaaaabaaaaaaaaaaaaaaaaaaaac
 caaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
-caaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
+caaaaaaadaaaaaaaaaaaaaaaaaaaaaaaaac
 caaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
 caaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac
 caaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaac

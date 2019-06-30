@@ -1,12 +1,12 @@
 // BEGIN_INTERNALS
 /*
 MAP_ZOOM: 1.000
-LAST_COMPILE_TIME: 1561844923
-DIR: game game\turfs icons maps 
+LAST_COMPILE_TIME: 1561849950
+DIR: game game\mob game\objects game\turfs icons maps 
 AUTO_FILE_DIR: ON
 MAP_ICON_TYPE: 0
-LAST_COMPILE_VERSION: 512.1467
-WINDOW: maps\map.dmm;icons\iconfile.dmi;skin.dmf
-FILE: maps\map.dmm
+LAST_COMPILE_VERSION: 512.1463
+WINDOW: maps\map.dmm;skin.dmf;icons\iconfile.dmi
+FILE: icons\iconfile.dmi
 */
 // END_INTERNALS

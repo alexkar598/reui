@@ -14,10 +14,15 @@
 // END_PREFERENCES
 
 // BEGIN_INCLUDE
+#include "skin.dmf"
 #include "game\examine.dm"
+#include "game\gameLoop.dm"
 #include "game\world.dm"
 #include "game\mob\player.dm"
 #include "game\objects\computer.dm"
 #include "game\turfs\turfs.dm"
+#include "maps\map.dmm"
+#include "ReUI\interfaces\UIDatumInterface.dm"
+#include "ReUI\internal\UIDatum.dm"
 // END_INCLUDE
 

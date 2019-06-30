@@ -10,11 +10,7 @@
 
 /world/New()
 	. = ..()
-	while (TRUE)
-		for (var/mob/c in world)
-			if(c.ckey)
-				world.log << "User [c.ckey] is logged in and named [c.name]"
-		sleep(1)
+	startProcessing()
 
 /area
 	mouse_opacity = FALSE
@@ -30,3 +26,5 @@
 	step_size = 32
 
 
+/proc/MSGCRASH(msg)
+	CRASH(msg)
