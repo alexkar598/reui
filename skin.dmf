@@ -64,7 +64,6 @@ window "default"
 		size = 1024x768
 		anchor1 = none
 		anchor2 = none
-		background-color = none
 		is-default = true
 		saved-params = "pos;size;is-minimized;is-maximized"
 		title = "ReUI Testing Environment"
@@ -93,7 +92,6 @@ window "default"
 		anchor1 = 63,0
 		anchor2 = 100,45
 		saved-params = ""
-		tab-background-color = none
 	elem "map1"
 		type = MAP
 		pos = 0,0

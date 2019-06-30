@@ -21,7 +21,20 @@
 
 /obj/computer/Click(location, control, params)
     . = ..()
+
     if(get_dist(usr,src) >= 2)
         return FALSE
 
-    active = !active
+    world << params
+    world << params2list(params)
+
+    var/list/paramslist = params2list(params)
+
+    if(paramslist["ctrl"])
+        active = !active
+        return active
+
+    usr << browse('ReUI/webData/build/index.html',"window=reui_window_test;display=1;size=300x300;border=[paramslist["alt"]];can_close=1;can_resize=1;can_minimize=1;titlebar=1")
+
+    
+   

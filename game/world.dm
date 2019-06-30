@@ -20,8 +20,8 @@
 /atom
 	name = "No name set"
 	desc = "No desc set"
-	icon = 'iconfile.dmi'
-
+	icon = 'icons/iconfile.dmi'
+	
 /atom/movable
 	step_size = 32
 

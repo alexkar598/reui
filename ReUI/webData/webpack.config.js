@@ -14,7 +14,7 @@ const webpack = require('webpack');
  *
  */
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+//const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 /*
  * We've enabled HtmlWebpackPlugin for you! This generates a html
@@ -26,12 +26,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
  */
 
 module.exports = {
-	mode: 'development',
+	mode: 'production',
 
 	entry: {
-		window_test: './src/windows/test.js',
-		window_otherpage: './src/windows/otherpage.js',
-		window_thirdpage: './src/windows/thirdpage.js'
+		window_test: './src/windows/test.jsx'
 	},
 
 	output: {
@@ -39,33 +37,25 @@ module.exports = {
 		path: path.resolve(__dirname, 'build')
 	},
 
-	plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()],
+	//plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin()],
 
 	module: {
 		rules: [
 			{
 				test: /.(js|jsx)$/,
-				include: [path.resolve(__dirname, 'src/windows')],
+				//include: [path.resolve(__dirname, 'src/windows')],
 				loader: 'babel-loader',
-
+				exclude: /node_modules/,
 				options: {
 					plugins: ['syntax-dynamic-import'],
-
-					presets: [
-						[
-							'@babel/preset-env',
-							{
-								modules: false
-							}
-						]
-					]
+					presets: ['@babel/preset-react']
 				}
 			}
 		]
 	},
 
 	optimization: {
-		splitChunks: {
+		 splitChunks: {
 			chunks: 'all',
 			maxSize: 0,
 			minChunks: 1,
@@ -81,10 +71,11 @@ module.exports = {
 				reuseExistingChunk: true
 			  }
 			}
-		}
+		} 
 	},
 
 	devServer: {
-		open: true
+		open: true,
+		contentBase: path.join(__dirname, 'build'),
 	}
 };
