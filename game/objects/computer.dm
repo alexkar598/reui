@@ -34,6 +34,9 @@
         active = !active
         return active
 
+
+    usr << browse('ReUI/webData/build/reui_vendors.js',"display=0")
+    usr << browse('ReUI/webData/build/reui_window_test.js',"display=0")
     usr << browse('ReUI/webData/build/index.html',"window=reui_window_test;display=1;size=300x300;border=[paramslist["alt"]];can_close=1;can_resize=1;can_minimize=1;titlebar=1")
 
     

@@ -18,9 +18,7 @@
     "browserslist": "^4.6.3",
     "webpack": "^4.35.0",
     "webpack-cli": "^3.3.5",
-    "webpack-dev-server": "^3.7.2",
-    "raf": "^3.4.1",
-    "core-js": "^3.1.4"
+    "webpack-dev-server": "^3.7.2"
   },
   "dependencies": {
     "babel": "^6.23.0",

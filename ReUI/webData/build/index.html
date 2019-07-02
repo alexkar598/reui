@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <script>
+    
+    /* console.stdlog = console.log.bind(console);
+    console.log = function(){
+        for (i = 0; i < arguments.length; i++) {
+            element = arguments[i];
+            document.writeln("<li>" + element + "</li>")
+        } 
+        document.writeln("<li>" + Array.from(arguments) + "</li>")
+        console.stdlog.apply(console, arguments); 
+    } */
+    window.onerror = function(error, url, line) {
+        document.write("Error: (" + error + ") happened at url: (" + url + ") on line: (" + line + ")")
+    };      
+    </script>
+</head>
+<body>
+    <h1>Page Load Complete</h1>
+    <div id="root">
+        <h1>React is not loaded</h1>
+    </div>
+    <script src="reui_vendors.js"></script>
+    <script src="reui_window_test.js"></script>
+    scripts online
+</body>
+</html>
