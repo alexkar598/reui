@@ -1,3 +1,6 @@
 *.lk
 **/node_modules/**
 ReUI/webData/build/**
+reuitestenv.dmb
+reuitestenv.int
+reuitestenv.rsc
